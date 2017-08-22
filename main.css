@@ -1,1 +1,207 @@
+/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+.entry-content a, .entry-summary a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong {
+	-webkit-box-shadow: inset 0 -1px 0 rgb(30,144,186);
+	box-shadow: inset 0 -1px 0 rgb(30,144,186);
+}
+
+/* remove the blue border on the social media page because it's ugly af */
+.tagregator .entry-content a,
+.tagregator .entry-content a:hover {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* position the logo*/
+@media screen and (max-width: 700px) {
+	.home .custom-header-media:after {
+		content: "";
+		background-image: url('https://2017.slc.wordcamp.org/files/2017/07/wclsc-2017-black.png?w=500px');
+		background-size: 300px 300px;
+		height: 300px;
+		margin: -180px 0 0 -150px;
+		width: 300px !important;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+	}
+	
+	.site-title {
+		display: none;
+	}
+	
+	.site-description {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 701px) {
+	.home .custom-header-media:after {
+		content: "";
+		background-image: url('https://2017.slc.wordcamp.org/files/2017/07/wclsc-2017-black.png?w=500px');
+		background-size: 500px 500px;
+		height: 500px;
+		margin: -300px -250px;
+		width: 500px !important;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+	}
+	
+	.site-title {
+		display: none;
+	}
+	
+	.site-description {
+		font-size: 1.5em;
+	}
+}
+
+/* make things a little wider */
+@media screen and (min-width: 1100px) {
+	#primary .wrap {
+		max-width: 1000px;
+		padding: 2em 0;
+	}
+	
+	.navigation-top .wrap, .site-branding .wrap,  #colophon .wrap {
+		padding: 0;
+	}
+	
+	.main-navigation a {
+		padding: 1em 2.25em 1em 0;
+	}
+}
+
+/* clean up sponsors widgets */
+.textwidget .wcorg-sponsors h3, .textwidget .wcorg-sponsors p, .textwidget .wcorg-sponsors ul, .textwidget .wcorg-sponsors h2 {
+	display: none;
+}
+
+.home .site-footer .widget-column.footer-widget-1 {
+	width: 100%;
+}
+
+.home .site-footer .wcorg-sponsors img {
+	width: 22%;
+	float: left;
+	padding-right: 2%;
+}
+
+/* flexbox. But not really because I need to learn these better */
+@media screen and (min-width: 1200px) {
+	.flex-item {
+		width: 33%;
+		padding-right: 3.3%;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.flex-item {
+		width: 100%;
+		float: left;
+	}
+}
+
+/* hide silly titles on front page */
+.post-2328 .entry-title, .post-2328 .entry-header {
+	display: none;
+}
+
+/* maybe some borders? or not */
+.panel-content {
+	border-bottom: 5px solid #21a1cf;
+}
+
+@media screen and (max-width: 320px) {
+	.wrap {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.wcpt-schedule tr {
+		border: 0;
+		margin-bottom: 16px;
+	}
+}
+
+#panel4	.entry-content a, .entry-content a:hover {
+	-webkit-box-shadow: inset 0 0 0 rgba(15,15,15,1);
+	box-shadow: inset 0 0 0 rgba(15,15,15,1);
+}
+
+@media screen and (min-width: 48em) {
+	.site-footer {
+		margin-top: 0;
+		padding-top: 1em;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.site-footer {
+		margin-top: 0;
+		padding-top: 1em;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.panel-image {
+		height: 2vh;
+		max-height: 200px;
+	}
+}
+
+#post-2328 .panel-image {
+	background-image: url('https://2017.slc.wordcamp.org/files/2017/07/cropped-tiles.gif') !important;
+	height: 1vh;
+}
+
+/* Schedule stuff */
+th.wcpt-col-track, 
+td.wcpt-session-type-session {
+	width: 30%;
+}
+
+th.wcpt-col-time, 
+td.wcpt-time {
+	width: 10%;
+}
+
+th.wcpt-col-track, 
+th.wcpt-col-time,
+tr.global-session td {
+	text-align: center;
+}
+
+a.wcpt-session-title {
+	font-style: italic;
+}
+
+span.wcpt-session-speakers a {
+	font-weight: bold;
+}
+
+span.wcpt-session-speakers {
+	display: block;
+}
+
+td.wcpt-time {
+	text-align: left;
+}
+
+/* speakers page */
+
+.wcorg-speaker-description img.avatar {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
 
